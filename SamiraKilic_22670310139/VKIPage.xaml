@@ -1,0 +1,17 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SamiraKilic_22670310139.VKIPage"
+             Title="VKİ Hesaplama">
+
+	<VerticalStackLayout Padding="20" Spacing="15">
+
+		<Slider x:Name="kiloSlider" Minimum="30" Maximum="150" ValueChanged="HesaplaVKI"/>
+		<Label x:Name="kiloLabel" Text="Kilo: 70 kg"/>
+
+		<Slider x:Name="boySlider" Minimum="100" Maximum="220" ValueChanged="HesaplaVKI"/>
+		<Label x:Name="boyLabel" Text="Boy: 170 cm"/>
+
+		<Label x:Name="vkiSonucLabel" Text="VKİ: 0.0"/>
+
+	</VerticalStackLayout>
+</ContentPage>

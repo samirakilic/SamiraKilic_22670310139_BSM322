@@ -1,0 +1,34 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SamiraKilic_22670310139.KrediPage"
+             Title="Kredi Hesaplama">
+
+	<ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+
+            <Label Text="Kredi Türü:" FontAttributes="Bold"/>
+            <Picker x:Name="krediTuruPicker" Title="Kredi Türü Seçiniz">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>İhtiyaç Kredisi</x:String>
+                        <x:String>Taşıt Kredisi</x:String>
+                        <x:String>Konut Kredisi</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Label Text="Kredi Tutarı (₺):" FontAttributes="Bold"/>
+            <Entry x:Name="tutarEntry" Placeholder="Örneğin: 50000" Keyboard="Numeric"/>
+
+            <Label Text="Faiz Oranı (%):" FontAttributes="Bold"/>
+            <Entry x:Name="faizEntry" Placeholder="Örneğin: 1.49" Keyboard="Numeric"/>
+
+            <Label x:Name="vadeLabel" Text="Vade: 12 Ay" FontAttributes="Bold"/>
+            <Slider x:Name="vadeSlider" Minimum="1" Maximum="60" Value="12" ValueChanged="VadeSlider_ValueChanged"/>
+
+            <Button Text="Hesapla" Clicked="Hesapla_Clicked"/>
+
+            <Label x:Name="sonucLabel" FontSize="20" TextColor="DarkGreen"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,15 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SamiraKilic_22670310139.RenkPage"
+             Title="Renk Seçici">
+	<VerticalStackLayout Padding="20" Spacing="15">
+		<Slider x:Name="redSlider" Maximum="255" ValueChanged="RenkDegisti"/>
+		<Slider x:Name="greenSlider" Maximum="255" ValueChanged="RenkDegisti"/>
+		<Slider x:Name="blueSlider" Maximum="255" ValueChanged="RenkDegisti"/>
+
+		<Label x:Name="renkKodLabel" Text="#000000" FontSize="20" HorizontalOptions="Center"/>
+
+		<Button Text="Kopyala" Clicked="KopyalaClicked"/>
+		<Button Text="Rastgele Renk" Clicked="RastgeleRenkClicked"/>
+	</VerticalStackLayout>
+</ContentPage>

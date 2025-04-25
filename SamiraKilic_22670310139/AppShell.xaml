@@ -1,0 +1,25 @@
+<Shell
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:SamiraKilic_22670310139"
+    x:Class="SamiraKilic_22670310139.AppShell">
+
+    <!-- Başlangıç Sayfası -->
+    <ShellContent
+        Title="Ana Sayfa"
+        ContentTemplate="{DataTemplate local:MainPage}" />
+
+    <!-- Diğer Sayfalar -->
+    <ShellContent
+        Title="Kredi Hesaplama"
+        ContentTemplate="{DataTemplate local:KrediPage}" />
+
+    <ShellContent
+        Title="VKİ Hesaplama"
+        ContentTemplate="{DataTemplate local:VKIPage}" />
+
+    <ShellContent
+        Title="Renk Seçici"
+        ContentTemplate="{DataTemplate local:RenkPage}" />
+
+</Shell>
